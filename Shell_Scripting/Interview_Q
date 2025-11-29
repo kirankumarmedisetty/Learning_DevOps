@@ -1,0 +1,14 @@
+Q. Can we use pipe command to forward information of date command to second command?
+Ans: No, it can't be possible because date is the default command of shell and it forwards to 'stdin' but not 'stdout'. 
+
+Q. What is 'stdin' 'stdout' & 'stderr' in linux?
+Ans: 'stderr' (shoft for standard error) is the stream used by programs to output error messages. 
+By default, 'stderr' is also directed to the terminal screen. For example, if you try to list a non-existent directory using 
+ls /nonexistentdirectory, the error message is sent to stderr and displayed on the terminal.
+
+'stdout' (shoft for standard output) is the default stream where a program writes its output data. By default, this stream is directed to the terminal screen.
+For example, when you run a command like echo "Hello, World!", the text "Hello, World!" is sent to stdout and displayed on the terminal.
+
+Stdin (short for standard input) is an input stream where data is sent to and read by a program. It is a file descriptor in Unix-like operating systems
+
+Q.
