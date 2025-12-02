@@ -7,10 +7,10 @@ define the project's scope. It sets the foundation for the entire development pr
 2. **Defining Requirements**: Detailed requirements are documented in a Software Requirement Specification (SRS) document, which serves as a reference for subsequent stages.
 3. **Designing Architecture**: Based on the SRS, software architects create a Design Document Specification (DDS) outlining the system's architecture, user interface, and 
 components. High Level Designing (HLD) and Low Level Designing (LLD) are decided by architects. 
-4. **Development**: Developers write code according to the design specifications. This phase involves using programming tools and adhering to coding standards.
+4. **Development/Building**: Developers write code according to the design specifications. This phase involves using programming tools and adhering to coding standards.
 5.**Testing and Integration**: The software undergoes rigorous testing to identify and fix defects. Integration ensures that all components work together seamlessly.
 6. **Deployment and Maintenance**: The software is deployed in the production environment. Maintenance involves addressing issues, implementing updates, and ensuring the 
 software remains functional over time.
 
 Q. How DevOps imrpoves SDLC?
-Ans: DevOps involvement in SDLC stages is maninly at **Development**, **Testing** and **Deployment**. 
+Ans: DevOps involvement in SDLC stages is maninly at **Development/Building**, **Testing** and **Deployment**. 
