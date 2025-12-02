@@ -13,4 +13,4 @@ components. High Level Designing (HLD) and Low Level Designing (LLD) are decided
 software remains functional over time.
 
 Q. How DevOps imrpoves SDLC?
-Ans: DevOps involvement in SDLC stages is maninly at **Development/Building**, **Testing** and **Deployment**. 
+Ans: DevOps involvement in SDLC cycle is maninly at **Development/Building**, **Testing** and **Deployment** where he automates the process by deliverying them quickly.
