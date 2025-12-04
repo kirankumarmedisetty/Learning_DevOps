@@ -66,3 +66,17 @@ This workflow highlights Git's ability to handle offline work and decentralized 
 **Offline Work:** CVCS requires connectivity, whereas DVCS allows offline commits.
 **Collaboration:** CVCS relies on a central server, while DVCS enables peer-to-peer sharing.
 **Performance:** DVCS is faster for local operations since it doesn't require server communication
+
+
+Q. What does hidden folder .git contains.
+It has HEAD, refs, objects, config, hooks
+HEAD: Keeping Track of your current Files
+--> The HEAD file is a simple text file that contains the SHA hash of the commit that's currently checked out in your repository. This file is used to keep track of your current branch, and it's updated automatically whenever you switch branches or checkout a specific commit.
+Refs: Storing references to Commits and Branches
+--> The refs folder is where Git stores references to commits and branches in your repository. Inside this folder, you'll find a variety of subfolders that correspond to different types of references. For example, the heads subfolder contains references to the heads of branches in your repository, while the tags subfolder contains references to specific tags that you've created.
+Objects: Storing Codebase as a series of Snapshorts
+--> The objects folder is where Git stores your codebase as a series of snapshots. Each snapshot represents the state of your codebase at a specific point in time, and Git uses these snapshots to track changes to your code over time. Inside the objects folder, you'll find two subfolders: pack and info. The pack subfolder contains compressed snapshots of your codebase, while the info subfolder contains metadata about those snapshots.
+Config: Storing configuration information for Git
+--> The config file is where Git stores configuration information for your repository. This file contains a variety of settings that control how Git behaves, such as your name and email address, the default branch for new checkouts, and the behavior of Git's merge and diff tools.
+Hooks: Running scripts at specific points in the Git workflos
+--> The hooks folder is where you can add custom scripts that run at specific points in the Git workflow. For example, you can add a script that runs before each commit to ensure that your code meets certain quality standards, or a script that runs after each checkout to set up your development environment.
