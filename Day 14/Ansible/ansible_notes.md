@@ -21,3 +21,21 @@ Ansible:
 when compared to Puppet.
 4. It uses very simple yaml launguage which is widely used accross globe. 
 5. In ansible you can build your own module using python and share it accross different organizations using Ansile Galaxy.
+
+*Q. What is the programming language do you use for building custom modules?
+Ans: Ansible uses python as a programming language to build custom modules, . 
+
+*Q. Have you created a customer ansible module using python?
+Ans: There was no requirement as of now, but I can write a module whenever it is required.
+
+*Q. Does ansible supports only Windows or only Linux?
+Ans: It supports both Windows and Linux. For windows it uses winrm as a protocol to connect and for linux it uses ssh as a protocol.
+
+*Q. Is ansible uses pull or push?
+Ans: Ansible is push mechanishm. You run a playbook from a node which connects over ssh/winrm to target nodes and pushes the tasks/configuration immediately. 
+
+*Q. Which language is used for writing playbooks?
+Ans: Ansible uses YAML as programming language.
+
+*Q. Does ansible supports AWS/Azure/GCP?
+Ans: It supports all the cloud provides. It only require public access and ssh needs port 22 to be opened to connect from host machines where ansible is configured. 
