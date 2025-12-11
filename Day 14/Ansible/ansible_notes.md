@@ -39,3 +39,11 @@ Ans: Ansible uses YAML as programming language.
 
 *Q. Does ansible supports AWS/Azure/GCP?
 Ans: It supports all the cloud provides. It only require public access and ssh needs port 22 to be opened to connect from host machines where ansible is configured. 
+
+*Q. What is the different b/w ansible adhoc and playbook?
+Ans. Using ansible adhoc commands you can execute single commands instently and if you running mutiple tasks on target servers you require playbook for execution. 
+
+*Q. How do you run certain number of tasks on particular servers but not on all servers in a inventory?
+Ans. All the servers will be metioned in inventory file and using grouping method I perform certain number of tasks on particular servers. 
+
+
