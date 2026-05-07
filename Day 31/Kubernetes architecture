@@ -9,6 +9,12 @@ ensuring that only authrorized users and applications can interact with the clus
 sure that the pod is assigned to that node. 
 - etcd - It is distributed, consistent and highly available key-value store that servers as a backbone of kubernetes. It is responsible
 for storing all cluster data, including configuration, state and metadata. 
+- kube-controller-manager - kube controller manager is a critical component of control plane, responsible for maintaining desired state
+of cluster with the specification defined in the cluster's configuration. It is a demon which runs multiple controller, each managing a 
+specific type of resources in kubernetes. 
+- Cloud-Controller-Manager(CCM) - CCM is a open source code on github which helps in interacting kubnenates with various cloud provider. 
+For suppose I've a my own cloud, I need to write logic to support kubernetes to my cloud and submit to CCM so kubernetes can perform task
+my cloud like creating load balancer or storage on my cloud or any cloud like AWS, Azure etc. 
 2) Data Plane - worker
 - Kubelet : Kubelet is used for creation of Pods and also will make sures that the Pod is always running, if there is any 
 issue with the Pod it interacts with "API Server" on Control Plane and retrives Pod specifications and validates them and
