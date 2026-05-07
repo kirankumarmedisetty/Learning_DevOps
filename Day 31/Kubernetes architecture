@@ -1,0 +1,18 @@
+Q. What is the arichtecture of kubernetes?
+Ans: Kubernetes is a cluster which have mutliple master and nodes. It has mainly divided into two components one is 
+"control plane - master"  and other is "data plan - worker". 
+1) Control Plane - master
+- API Server - API Server is the heart of the kubnernetes. It is the component which is exposed to the external world
+where it takes request and acts accordingly. API Server handles authentication, authroization, validation, admission control,
+ensuring that only authrorized users and applications can interact with the cluster. 
+- Kube-scheduler - Once API Server decides that a pod needs to be installed on a specefic node, scheduler acts on it and it will make
+sure that the pod is assigned to that node. 
+- etcd - It is distributed, consistent and highly available key-value store that servers as a backbone of kubernetes. It is responsible
+for storing all cluster data, including configuration, state and metadata. 
+2) Data Plane - worker
+- Kubelet : Kubelet is used for creation of Pods and also will make sures that the Pod is always running, if there is any 
+issue with the Pod it interacts with "API Server" on Control Plane and retrives Pod specifications and validates them and
+later interact with container runtime interface to sotp and start container.  
+- Container Runtime: It provides a runtime or execution environment for the Contrainer to run Pods. Kubernetes provides 
+options to use any runtime which we like to use like Dockershim, container-d, cri-o etc. 
+- Kube Proxy - It is responsible for networking, ip-address, load balancing. 
