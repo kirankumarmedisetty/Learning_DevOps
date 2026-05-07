@@ -1,0 +1,19 @@
+Q. How Kubenetes is different from Docker or any other container platform?
+Ans: *Single Host  - Container's are Ephemeral means Short Lived. Container's are dependent on Single Host and for example if one 
+Container is using more memory it impacts and kills other container which is short of memory resources running on Single Host. 
+* Auto-Healling - Docker does'nt support Auto-Healling feature means if one container whichs is running the application gets
+killed it doesn't automatically comes up. It's need to be started manually by someone from team like Devops Enginner. 
+* Auto-Scalling and Load Balancing - Docker doen's support both Auto-Scalling and Load Balancing feature.
+* Enterprise Support Solutions - Docker is a simple platform. It doesn't support any Enterprice Solutions like Load Balncer, Firewall, 
+Auto-Scale, Healing, API-Gateways, blacklist and whitlist. 
+
+Q. Advantages of Kubenetes over other container platform like Docker?
+Ans: *Cluster Archetecture - Kubenetes suport Cluster means it have master and node archetecutre. So, if there are any faulty pods
+which are impacting the application Kubenetes can immediately put that faulty pod in another node. 
+* Auto-Scalling - Kubenetes have replication sets which uses YAML file from Deployment where you can define how may pods needs to be 
+deployed and  Kubenetes have feature like HPA (Horizontal Pod AutoScalling) which automatically scales pods by using Metrics-API 
+to read the metrics and autoscale pods. 
+* Auto-Healing - If there is some issue with the Pods and it is about to be killed by using API Server Kubenetes imedditely responds
+and roll-out a new pod. 
+* Enterprise Support Solutions - It supports Enterprice Solutions like Load Balncer, Firewall, 
+Auto-Scale, Healing, API-Gateways, blacklist and whitlist.
