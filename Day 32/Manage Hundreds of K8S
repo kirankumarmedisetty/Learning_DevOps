@@ -10,3 +10,8 @@ cost effective. It is used in Production as well and it depends if there doen't 
 
 Q. How DevOps engineer manage 100's of K8's cluster?
 Ans: They manage using tool called "KOPS". Befor this they used "kubeadmin".
+
+Q. Command to configure your k8 domain on Route53?
+# aws route53 create-hosted-zone --name dev.example.com --caller-reference 1
+
+
