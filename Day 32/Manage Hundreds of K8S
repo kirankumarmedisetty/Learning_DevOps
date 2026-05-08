@@ -1,0 +1,12 @@
+Q. What are most popular and widely used K8's distributions in companies?
+Ans: 1. Kubernetes - It is a open source platform which is most widely used in staging and devlopment of the organisation as it is 
+cost effective. It is used in Production as well and it depends if there doen't require to solve the issue immediately. 
+2. OpenShift - It is a distribution k8's provided by Redhat.
+3. Rancher - It is a distribution k8's provided by Rancher Labs.
+4. Tanzu - It is distribution k8's provided by VMWare. 
+6. EKS - It is owned by Amazon
+7. AKS - It is owned by Azure Microsoft.
+8. GKE - It is owned by Google. 
+
+Q. How DevOps engineer manage 100's of K8's cluster?
+Ans: They manage using tool called "KOPS". Befor this they used "kubeadmin".
