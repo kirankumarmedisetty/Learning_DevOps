@@ -1,0 +1,5 @@
+Q. What is the purpose of Pods in Kubernetes?
+Ans: A Pod is the smallest deployable unit in Kubernetes, designed to run one or more tightly coupled containers.Each Pod runs on a 
+single worker node and can contain one or multiple containers. Containers within a Pod share the same network namespace, allowing them 
+to communicate via localhost, and can access shared storage volumes.
+Pods are created and managed by Kubernetes, serving as a wrapper around containers to enhance their functionality and manageability.
