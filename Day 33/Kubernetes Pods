@@ -9,3 +9,8 @@ Ans: It provides command line for running the kubernetes and you can directly in
 Q. How will you debug if there is issue with pod?
 Ans: We use command "kubectl describe pods <pod-name>". It will give us complete information like status of pods, ip-address, events etc. 
 Also, we use command "kubectl logs <pod-name>. It will give us log information to debug. 
+
+Q. Cheat sheet for kubectl commands?
+Ans: https://kubernetes.io/docs/reference/kubectl/quick-reference/
+
+
