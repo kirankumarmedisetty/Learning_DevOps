@@ -8,3 +8,7 @@ YAML manifest file to create a container. It acts as a wrapper on top of contain
 single pod which can share network and storage through localhost. 
 Deployment:  Deployment is a Kubernetes resource that manages the lifecycle of Pods. Deployment uses replica sets to create Pods, 
 which is used for high availablity and load balancing. If there is a failed pod it makes sure that the pod is replaced and is auto-healed.
+
+Q. What is the differnce between a deployment and replica set?
+Ans:In Kubernetes, ReplicaSet ensures a specified number of identical Pods are running at all times, while a Deployment is a higher-level
+abstractionthat manages ReplicaSets and provides advanced update and rollback capabilities.
