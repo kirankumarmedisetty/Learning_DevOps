@@ -1,0 +1,10 @@
+Q. What is the difference between Container, Pod and Deployment?
+Ans: Container:  A Container is like a small, portable box where your application and its dependencies (like libraries, tools, etc.) 
+live together. This box contains everything needed to run the application — the code, runtime, system tools, and libraries. 
+It’s isolated, meaning it doesn’t interfere with other applications, and can run consistently across different environments 
+(development, testing, production).
+Pod: Pod is a smallest depolymentable unit in kubnerenates. We mentione container details like image, version, network, storage in 
+YAML manifest file to create a container. It acts as a wrapper on top of container and can we create single or multipe container in 
+single pod which can share network and storage through localhost. 
+Deployment:  Deployment is a Kubernetes resource that manages the lifecycle of Pods. Deployment uses replica sets to create Pods, 
+which is used for high availablity and load balancing. If there is a failed pod it makes sure that the pod is replaced and is auto-healed.
