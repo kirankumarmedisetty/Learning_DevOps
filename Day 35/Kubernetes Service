@@ -13,3 +13,10 @@ are created or destroyed.
 *Service Discovery*: Kubernetes supports service discovery via DNS or environment variables, allowing clients to locate and connect to 
 Services easily.
 
+Q. Types of Services
+*ClusterIP*: The default type, accessible only within the cluster. It provides an internal IP for communication between Pods.
+*NodePort*: Exposes the Service on a static port on each Node, allowing external access via <NodeIP>:<NodePort>.
+*LoadBalancer*: Integrates with cloud providers to provision an external load balancer, exposing the Service to the internet.
+*ExternalName*: Maps the Service to an external DNS name, redirecting traffic outside the cluster.
+*Headless Service*: Does not assign a ClusterIP, enabling direct communication with individual Pods.
+
