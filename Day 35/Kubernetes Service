@@ -1,0 +1,15 @@
+Q. What would be your Pod count?
+Ans: It depends on the concurrent users or requests one replica of the Pod can handle, based on that we would decide the Pod count. 
+
+Q. What is the benefit of using Service in Kubenetes?
+Ans: In Kubernetes, a Service is an abstraction that provides a stable network endpoint to expose a group of Pods running an application. 
+Since Pods are ephemeral and their IP addresses can change dynamically, Services ensure consistent access to these Pods without requiring
+clients to track their IP changes.
+
+Q. Key Features of Kubernetes Services
+*Stable Endpoint*: Services provide a fixed IP address (ClusterIP) and DNS name, ensuring reliable communication with Pods, even as Pods 
+are created or destroyed.
+*Load Balancing*: Services distribute incoming traffic across multiple Pods, ensuring efficient utilization and high availability.
+*Service Discovery*: Kubernetes supports service discovery via DNS or environment variables, allowing clients to locate and connect to 
+Services easily.
+
