@@ -11,4 +11,7 @@ which is used for high availablity and load balancing. If there is a failed pod 
 
 Q. What is the differnce between a deployment and replica set?
 Ans:In Kubernetes, ReplicaSet ensures a specified number of identical Pods are running at all times, while a Deployment is a higher-level
-abstractionthat manages ReplicaSets and provides advanced update and rollback capabilities.
+abstraction that manages ReplicaSets and provides advanced rolling updates with zero-downtime and rollback capabilities.
+
+Q. How do you list out all the resources in a namespace?
+Ans: #kubectl get all -A
